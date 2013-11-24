@@ -29,7 +29,7 @@ Lastly, E.P.Q. is the initials of a particular professor from my undergrad days
 who is well-known for teaching CS32, the data structures course.
 
 # Notes on structures
-*General:* Each structure will contain a field `_comment` somewhere. This field
+**General:** Each structure will contain a field `_comment` somewhere. This field
 describes the structure contained in the file and should be ignored.
 
 ## Binary Trees
