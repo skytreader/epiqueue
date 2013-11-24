@@ -37,3 +37,18 @@ Each node is represented with the following fields: `node_data`, `left_son`, and
 `right_son`. Terminal nodes have the value `null` for `left_son` and `right_son`.
 
 The root node, and only the root node, will contain the field `_comment`.
+
+## Graphs
+Graphs are represented as either an adjacency matrix or adjacency lists. The
+graph representation is nested in the JSON structure in the field `representation`.
+Aside from the `_comment` field, there is also another field, `_is_matrix`,
+containing a boolean value that will distinguish between representations.
+
+The representation field of an adjacency matrix representation will contain an
+array of arrays, one inner array for each node. The square structure will
+feature ones and zeroes, one signifying adjacency and non-adjacency,
+respectively.
+
+An adjacency list representation will feature a map of strings to a list. The
+key will be the node's name while the corresponding list will contain the keys
+of the adjacent nodes.
