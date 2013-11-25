@@ -1,0 +1,14 @@
+{
+    "_comment": "A right-skewed binary treei with three elements.",
+    "node_data": "A",
+    "left_node": null,
+    "right_node": {
+        "node_data": "B",
+        "left_node": null,
+        "right_node": {
+            "node_data": "C",
+            "left_node": null,
+            "right_node": null
+        }
+    }
+}

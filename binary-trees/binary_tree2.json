@@ -1,0 +1,42 @@
+{
+    "_comment": "A random binary tree with the letters for the word 'ALGORITHMS' as nodes. The word is spelled out when the tree is traversed in preorder sequence.",
+    "node_data": "A",
+    "left_son":{
+        "node_data":"L",
+        "left_son": {
+            "node_data":"G",
+            "left_son": {
+                "node_data": "O",
+                "left_son": null,
+                "right_son": null
+            },
+            "right_son": {
+                "node_data": "R",
+                "left_son": null,
+                "right_son": null
+            }
+        },
+        "right_son": {
+            "node_data": "I",
+            "left_son": null,
+            "right_son": null
+        }
+    },
+    "right_son": {
+        "node_data": "T",
+        "left_son": {
+            "node_data": "H",
+            "left_son": null,
+            "right_son":{
+                "node_data": "M",
+                "left_son": null,
+                "right_son": null
+            }
+        },
+        "right_son": {
+            "node_data": "S",
+            "left_son": null,
+            "right_son": null
+        }
+    }
+}

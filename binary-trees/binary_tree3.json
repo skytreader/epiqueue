@@ -1,0 +1,14 @@
+{
+    "_comment": "A left-skewed binary tree on three nodes.",
+    "node_data": "A",
+    "left_son": {
+        "node_data": "B",
+        "left_son": {
+            "node_data": "C",
+            "left_son": null,
+            "right_son": null
+        },
+        "right_son": null
+    },
+    "right_son": null
+}
