@@ -1,5 +1,5 @@
 {
-    "_comment": "A right-skewed binary treei with three elements.",
+    "_comment": "A right-skewed binary tree with three elements.",
     "node_data": "A",
     "left_node": null,
     "right_node": {
