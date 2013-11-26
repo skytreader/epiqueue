@@ -1,0 +1,13 @@
+{
+    "_comment": "A Petersen graph with a node and all incident edges removed. Graph 3 in MP3.",
+    "_is_matrix": true,
+    "_representation":
+        [
+            [0,0,1,1,0,0],
+            [0,0,0,1,0,1],
+            [1,0,0,0,1,0],
+            [1,1,0,0,0,0],
+            [0,0,1,0,0,1],
+            [0,1,0,0,1,0]
+        ]
+}
