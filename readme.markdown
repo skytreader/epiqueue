@@ -39,16 +39,25 @@ Each node is represented with the following fields: `node_data`, `left_son`, and
 The root node, and only the root node, will contain the field `_comment`.
 
 ## Graphs
-Graphs are represented as either an adjacency matrix or adjacency lists. The
-graph representation is nested in the JSON structure in the field `representation`.
-Aside from the `_comment` field, there is also another field, `_is_matrix`,
-containing a boolean value that will distinguish between representations.
+Graphs are represented as either an adjacency matrix or an adjacency list. A
+boolean field, `is_matrix` will distinguish between representations. All graph
+data can be found in the `representation` field, as described below.
 
-The representation field of an adjacency matrix representation will contain an
-array of arrays, one inner array for each node. The square structure will
-feature ones and zeroes, one signifying adjacency and non-adjacency,
-respectively.
+### Adjacency Lists
 
 An adjacency list representation will feature a map of strings to a list. The
 key will be the node's name while the corresponding list will contain the keys
 of the adjacent nodes.
+
+### Adjacency Matrix
+
+The representation field of an adjacency matrix representation will contain an
+array of arrays, one inner array for each node. In addition to the `representation`
+field adjacency matrix representations will also feature a `nodes` field
+containing the node labels for the graph. They are taken as respective with the
+matrix in the `representation` field.
+
+If the number of node labels exceed the size of the matrix, only the first _n_
+node labels are considered, where _n_ is the size of the matrix. If the size
+of the matrix exceeds the number of node labels. the representation is invalid
+and this is free for anyone's interpretation.
