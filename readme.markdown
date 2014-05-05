@@ -61,3 +61,10 @@ If the number of node labels exceed the size of the matrix, only the first _n_
 node labels are considered, where _n_ is the size of the matrix. If the size
 of the matrix exceeds the number of node labels. the representation is invalid
 and this is free for anyone's interpretation.
+
+Anyone is welcome to enter any value when creating adjacency matrices and have
+their own interpretation of _adjacency_. But for the record, those coming from
+me will use the following:
+
+  - A negative value implies **disconnected**.
+  - A nonnegative value implies the weight of the connection.
